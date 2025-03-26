@@ -1,5 +1,7 @@
 const SPOT_STACK = {
     tab: "Spot",
+    SpotScreen: "SpotScreen",
+    CreateSpot: "CreateSpot",
 };
 
 const FAV_STACK = {

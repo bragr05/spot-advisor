@@ -1,12 +1,13 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { Icon } from "@rneui/themed";
+import { SCREEN_NAMES } from "../utils/SreenName";
+import { CreateSpotScreen } from "../screens/SpotRoutes/CreateSpotScreen";
 
 import { AccountScreen } from "../screens/AccountScreen";
-import { FavoritesScreen } from "../screens/FavoritesScreen";
+import { FavoriteScreen } from "../screens/FavoriteScreen";
 import { RankingScreen } from "../screens/RankingScreen";
 import { SearchScreen } from "../screens/SearchScreen";
-import { SpotScreen } from "../screens/SpotScreen";
-import { SCREEN_NAMES } from "../utils/SreenName";
+import { SpotStack } from "../navigation/SpotStack";
 
 const Tab = createBottomTabNavigator();
 
@@ -22,7 +23,7 @@ export function AppNavigation() {
         >
             <Tab.Screen
                 name={SCREEN_NAMES.SPOT_STACK.tab}
-                component={SpotScreen}
+                component={SpotStack}
             />
             <Tab.Screen
                 name={SCREEN_NAMES.SEARCH_STACK.tab}
@@ -30,7 +31,7 @@ export function AppNavigation() {
             />
             <Tab.Screen
                 name={SCREEN_NAMES.FAV_STACK.tab}
-                component={FavoritesScreen}
+                component={FavoriteScreen}
             />
             <Tab.Screen
                 name={SCREEN_NAMES.RANK_STACK.tab}
