@@ -1,10 +1,10 @@
 import React from "react";
 import { View, Text } from "react-native";
 
-export function Ranking() {
+export function SpotsScreen() {
     return (
         <View>
-            <Text>Ranking view</Text>
+            <Text>Spots view</Text>
         </View>
     );
 }
